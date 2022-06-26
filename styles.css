@@ -19,3 +19,11 @@ ul{
   color: white;
   text-decoration: none;
 }
+#menu li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+}
+#menu>li{
+  float: left;
+  text-align:center
+}
