@@ -41,3 +41,16 @@ nav ul li a:not {
   box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
   display: none;
 }
+.nav-submenu li {
+  width: 100%;
+  white-space: nowrap;
+}
+.nav-movil {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #001628;
+  height: 70px;
+  width: 100%;
+}
