@@ -108,5 +108,14 @@ nav ul li a:not {
   top: -10px;
 }
 #nav-boton span:after {
-  
+  bottom: -10px;
+}
+#nav-boton.activo span:before, #nav-boton.activo span:after {
+  top: 0;
+}
+#nav-boton.activo span:after {
+  transform: rotate(-45deg);
+}
+#nav-boton.activo span:before {
+  transform: rotate(45deg);
 }
