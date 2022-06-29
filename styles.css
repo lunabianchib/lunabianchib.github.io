@@ -92,4 +92,21 @@ nav ul li a:not {
   padding: 5px 15px 15px 0px;
   z-index: 1;
 }
-
+#nav-boton span,
+#nav-boton span:after,
+#nav-boton span:before {
+  transition: all 500ms ease-in-out;
+  border-radius: 1px;
+  height: 5px;
+  width: 40px;
+  position: absolute;
+  display: block;
+  content: "";
+  background: #fff;
+}
+#nav-boton span:before {
+  top: -10px;
+}
+#nav-boton span:after {
+  
+}
