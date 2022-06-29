@@ -15,3 +15,14 @@ nav ul {
   padding: 0;
   background: #001628;
 }
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  color: #72e0d1;
+  text-decoration: none;
+}
