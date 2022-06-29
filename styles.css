@@ -1,8 +1,11 @@
-body h1 {
-  font-size: 22px;
-  color: #00ccff;
+.navigation {
+  height: 70px;
+  background: #001628;
 }
-*{
-  margin: 0;
-  padding: 0;
+nav {
+  float: left;
+  width: 100%;
+}
+.nav-menu {
+  
 }
