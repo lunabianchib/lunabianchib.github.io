@@ -367,13 +367,14 @@ img{
 /* ------------- ABOUT ---------------- */
 .about-img{
    width:200px;
+   height: 320px;
    border-radius: .5rem;
    justify-self: center;
    align-self: center;
 }
 .about-svg-img{
    width: 200px;
-
+   height: 320px;
 }
 .about-description{
    text-align: center;
