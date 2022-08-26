@@ -37,3 +37,4 @@ const mensajesError = {
         valueMissing: "Este campo no puede estar vacío",
         customError: "Use entre 20 y 200 caracteres"
     },
+}
