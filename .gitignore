@@ -1,0 +1,25 @@
+# Archivos generados automáticamente
+node_modules/
+dist/
+
+# Archivos de configuración locales
+.env
+conexion.php
+guardar_datos.php
+credentials.json
+redirect.php
+Server/
+
+#  Directorio temporal y archivos intermedios
+# Archivos y carpetas específicos de Visual Studio Code
+.vscode/
+
+# Archivo de configuración Composer
+composer.lock
+
+# Carpeta de carga de dependencias de Composer
+vendor/
+
+# Archivo de configuración npm
+package-lock.json
+package.json
