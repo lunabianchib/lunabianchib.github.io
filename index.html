@@ -3,28 +3,23 @@
   <!-- Head -->
   <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Luna Bianchi Borches">
         <meta name="description" content="Sitio Web de Luna Bianchi Borches | Portfolio">
         <meta name="keywords" content="portfolio, portafolio, cv, currículum, profesional">
         <meta name="copyright" content="Luna Bianchi Borches">
         <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="styles.css" type="text/css" media="all">
-        <link rel="shortcut icon" href="img/icon.png">
-        <script language="javascript" src="validation.js" type="text/javascript"> </script>
         <title>Mi Portfolio | Luna Bianchi Borches</title>
   <!-- icons -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-/>
-<script
-  src="https://kit.fontawesome.com/f570856479.js"
-  crossorigin="anonymous"
-></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/598d14f302.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./cliente/src/css/styles.css" type="text/css" media="all">
+  <link rel="shortcut icon" href="./public/imagenes/icon.png">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./Server/validaciones.mjs" type="module"></script> 
 
-<!-- CSS PERSONALIZADO -->
-<link rel="stylesheet" href="styles.css">
+<!-- Bootstrap JS desde CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -63,12 +58,13 @@
             Portfolio
           </a>
         </li>
+        <!--
         <li class="nav-item">
           <a href="#contact" class="nav-link">
             <i class="bi bi-send nav-icon"></i>
             Contacto
           </a>
-        </li>
+        </li> -->
       </ul>
       <i class="bi bi-x-lg nav-close" id="nav-close"></i>
     </div>
@@ -89,25 +85,29 @@
     <div class="home-container container grid">
       <div class="home-content grid">
         <div class="home-social">
-          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="home-social-icon">
+          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Linkedin">
             <i class="bi bi-linkedin"></i></a>
           
-          <a href="https://github.com/lunabianchib" target="_blank" class="home-social-icon">
+          <a href="https://github.com/lunabianchib" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Github">
             <i class="bi bi-github"></i></a>
           
-          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="home-social-icon">
+          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Instagram">
             <i class="bi bi-instagram"></i></a>
           
+            <a href="https://wa.link/iv6ul9" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+          <a href="https://www.behance.net/superartegchu/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Behance"><i class="bi bi-behance"></i></a>
         </div>
         <div class="home-data">
           <h1 class="home-title">Luna Bianchi Borches </h1>
           <h3 class="home-subtitle">Diseñadora y Desarrolladora Front End</h3>
           <p class="home-description">
-            Mis principales cualidades son mi caracter autodidacta e inquieto, aplicada al 100% en el aprendizaje e investigacion de nuevos conocimientos relacionados con mi actividad profesional, asi como el desarrollo de proyectos personales tanto a nivel individual como colectivo, siempre con el objetivo de disfrutar, aprender y mejorar tanto personal como profesional.      
+            Mis principales cualidades incluyen mi carácter autodidacta e inquieto, dedicado al 100% al aprendizaje e investigación de nuevos conocimientos relacionados con mi actividad profesional. Además, me destaco en el desarrollo de proyectos tanto a nivel individual como colectivo, siempre con el propósito de disfrutar, aprender y mejorar.      
           </p>
+          <!--
           <a href="#contact" class="button button-flex">
             Contáctame <i class="bi bi-send button-icon"></i>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="home-scroll">
@@ -126,11 +126,11 @@
     <span class="section-subtitle">Mi Introducción</span>
     <div class="about-container container grid">
       <div class="about-img">
-              <img class="about-svg-img" src="img/me.jpg" title="Me">
+              <img class="about-svg-img" src="./public/imagenes/me (2).jpg" title="Me" alt="Imagen de Luna Bianchi Borches">
       </div>
       <div class="about-data">
         <p class="about-description">
-          Hola, Soy Luna Bianchi Borches, tengo 19 años y soy de Argentina. Estudiante de Diseño Grafico y Animación Digital. Desde que fui a la secundaria me llamó la atención la programación y el diseño, por eso decidi y quise dedicarme a esto. Podría describirme como una persona con ganas de aprender, responsable con sus obligaciones y que quiere crecer tanto personalmente como profesionalmente.
+            Hola, soy Luna Bianchi Borches, una apasionada profesional argentina de 20 años. Me he formado en Diseño Gráfico y Animación Digital. Desde la secundaria, la programación y el diseño capturaron mi interés, llevándome a elegir dedicarme a esta fascinante combinación. Me describo como una persona ansiosa por aprender, comprometida con mis responsabilidades y con el deseo constante de crecer, tanto a nivel personal como profesional.
         </p>
         <div class="about-details">
           <div class="about-info">
@@ -150,11 +150,7 @@
           </div>
         </div>
         <div class="about-buttons">
-          <a
-            target="_blank"
-            href=""
-            class="button button-flex"
-          >
+          <a target="_blank" href="./public/pdf/CV%20Luna.pdf" class="button button-flex">
             Descargar CV <i class="bi bi-box-arrow-in-down button-icon"></i>
           </a>
         </div>
@@ -178,7 +174,10 @@
             <i class="fa-brands fa-css3-alt skill-icon"></i>
             <h5 class="skill-text">CSS</h5>
           </div>
-          
+          <div class="skill-box">
+            <i class="fa-brands fa-js-square skill-icon"></i>
+            <h5 class="skill-text">JAVASCRIPT</h5>
+          </div>
           <div class="skill-box">
             <i class="fa-brands fa-wordpress skill-icon"></i>
             <h5 class="skill-text">Wordpress</h5>
@@ -186,14 +185,6 @@
           <div class="skill-box">
             <i class="fa-brands fa-figma skill-icon"></i>
             <h5 class="skill-text">FIGMA</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-node-js skill-icon"></i>
-            <h5 class="skill-text">NODE JS</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-js-square skill-icon"></i>
-            <h5 class="skill-text">JAVASCRIPT</h5>
           </div>
         </div>
       </div>
@@ -215,7 +206,7 @@
           </div>
           <div class="skill-box">
             <i class="fa-solid fa-brain skill-icon"></i>
-            <h5 class="skill-text">growth mindset</h5>
+            <h5 class="skill-text">Growth Mindset</h5>
           </div>
           <div class="skill-box">
             <i class="fa-solid fa-people-group skill-icon"></i>
@@ -253,8 +244,9 @@
               <h3 class="experience-title">Tecnica en Diseño Grafico y Animación Digital</h3>
               <span class="experience-subtitle">Universidad Siglo 21</span>
               <div class="experience-calendar">
+                <p class="date" id="date1">
                 <i class="bi bi-calendar"></i>
-                Marzo 2020 - Julio 2023
+                Marzo 2021 - Diciembre 2023 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
               </div>
             </div>
 
@@ -273,11 +265,12 @@
               <span class="experience-line"></span>
             </div>
             <div>
-              <h3 class="experience-title">Desarrollo de Aplicaciones de Principio a Fin</h3>
-              <span class="experience-subtitle">Aptugo IT Academy</span>
+              <h3 class="experience-title">Inglés Nivel Pre-Intermediate (B1)</h3>
+              <span class="experience-subtitle">Academia Cultural Inglesa</span>
               <div class="experience-calendar">
+                <p class="date" id="date2">
                 <i class="bi bi-calendar"></i>
-                En Curso
+                Finalizado - Diciembre 2023 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
               </div>
             </div>
           </div>
@@ -288,8 +281,9 @@
               <h3 class="experience-title"> Oracle Next Education</h3>
               <span class="experience-subtitle">Oracle-Alura</span>
               <div class="experience-calendar">
+                <p class="date" id="date3">
                 <i class="bi bi-calendar"></i>
-                En Curso
+                Finalizado - 2022 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
               </div>
             </div>
 
@@ -306,11 +300,11 @@
                 <span class="experience-line"></span>
               </div>
               <div>
-                <h3 class="experience-title">Inglés Nivel Intermedio (B1)</h3>
-                <span class="experience-subtitle">Academia Cultural Inglesa</span>
+                <h3 class="experience-title">Full Stack Developer FrontEnd y BackEnd</h3>
+                <span class="experience-subtitle">Argentina Programa 4.0</span>
                 <div class="experience-calendar">
-                  <i class="bi bi-calendar"></i>
-                  En Curso
+                    <p class="date" id="date4"><i class="bi bi-calendar"></i>
+                  En curso - 2024 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
                 </div>
               </div>
             </div>
@@ -325,17 +319,17 @@
     <span class="section-subtitle">Mis proyectos</span>
     <div class="portfolio-container container">
       <div class="proyecto">
-        <img src="img/encriptador-de-texto.png" alt="Proyecto" />
+        <img src="./public/imagenes/encriptador-de-texto.png" alt="Proyecto">
         <div class="proyecto-overlay">
           <div class="project-data">
             <h4 class="project-title">Encriptador de texto</h4>
             <p class="project-description">
-              Es una pagina para encriptar y desencriptar el texto, se realizo como reto del programa Oracle Next Education.
+                Es una página para encriptar y desencriptar el texto, se realizó como reto del programa Oracle Next Education.
             </p>
             <div class="project-btn">
-              <a href="https://lunabianchib.github.io/encriptador-de-texto" target="_blank" class="button button-small button-flex"> Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
+              <a href="https://lunabianchib.github.io/encriptador-de-texto" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
               
-              <a href="https://github.com/lunabianchib/encriptador-de-texto" target="_blank" class="button button-small button-flex"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
+              <a href="https://github.com/lunabianchib/encriptador-de-texto" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
               
             </div>
           </div>
@@ -343,39 +337,24 @@
       </div>
 
       <div class="proyecto">
-        <img src="img/Juego-del-ahorcado.png" alt="Proyecto" />
+        <img src="./public/imagenes/ahorcado.jpg" alt="Proyecto">
         <div class="proyecto-overlay">
           <div class="project-data">
             <h4 class="project-title">Ahorcado</h4>
             <p class="project-description">
-              Es un juego muy conocido, que se realizó como reto del programa Oracle Next Education.
+                Es un juego muy conocido, que se realizó como reto del programa Oracle Next Education.
             </p>
             <div class="project-btn">
-              <a href="https://lunabianchib.github.io/juego-ahorcado" target="_blank" class="button button-small button-flex">
+              <a href="https://lunabianchib.github.io/juego-ahorcado" target="_blank" class="button button-small button-flex" rel="noopener noreferrer">
                 Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              <a href="https://github.com/lunabianchib/juego-ahorcado" target="_blank" class="button button-small button-flex"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
+              <a href="https://github.com/lunabianchib/juego-ahorcado" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
             </div>
           </div>
         </div>
       </div>
 
-    <div class="proyecto">
-      <img src="img/mi-portfolio.png" alt="Proyecto">
-      <div class="proyecto-overlay">
-        <div class="project-data">
-          <h4 class="project-title">Mi Portfolio</h4>
-          <p class="project-description">
-            Este debía contener las secciones de Inicio, Sobre mí, Experiencia, Portfolio y Contacto. El formulario de contacto debía tener validación para los datos ingresados por el usuario.
-          </p>
-          <div class="project-btn">
-            <a href="https://lunabianchib.github.io/" target="_blank" class="button button-small button-flex">Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-            <a href="https://github.com/lunabianchib/lunabianchib.github.io" target="_blank" class="button button-small button-flex">Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
       <div class="proyecto">
-        <img src="img/Conversor.png" alt="Proyecto" />
+        <img src="./public/imagenes/Conversor.png" alt="Proyecto">
         <div class="proyecto-overlay">
           <div class="project-data">
             <h4 class="project-title">Conversor de Moneda</h4>
@@ -383,9 +362,9 @@
               Es software encargado de convertir el valor de una moneda en la de otra moneda, se realizó como reto del programa Oracle Next Education.
             </p>
             <div class="project-btn">
-              <a href="https://lunabianchib.github.io/conversor-moneda" target="_blank" class="button button-small button-flex">
+              <a href="https://lunabianchib.github.io/conversor-moneda" target="_blank" class="button button-small button-flex" rel="noopener noreferrer">
                 Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              <a href="https://github.com/lunabianchib/conversor-moneda" target="_blank" class="button button-small button-flex"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
+              <a href="https://github.com/lunabianchib/conversor-moneda" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
             </div>
           </div>
         </div>
@@ -394,61 +373,59 @@
 </section>
 
   <!-- CONTACT -->
+  <!--
   <section class="contact section" id="contact">
     <h2 class="section-title">Contacto</h2>
     <span class="section-subtitle">Creemos algo juntos</span>
 
     <div class="contact-container container grid">
-      <form action="" class="contact-form">
-        <div class="contact-content">
-          <label for="name" class="contact-label">Nombre</label>
-          <input type="text" name="name" class="contact-input" required pattern="[\s\S]{6,25}" minlength="6" maxlength="25" data-tipo="nombre" placeholder="━">
-          <span class="error-message"></span
-          >
-        </div>
+      <form action="./guardar_datos.php" method="post" class="contact-form" id="contact-form" autocomplete="off">
+         <div class="contact-content">
+           <label for="nombre" class="contact-label">Nombre</label>
+           <input type="text" name="Nombre" id="nombre" class="contact-input" required pattern="[\s\S]{6,25}" minlength="6" maxlength="25" data-tipo="nombre" placeholder="Ingrese su nombre" data-tipoinput="texto">
+           <span class="error-message"></span>
+         </div>
         <div class="contact-content">
           <label for="email" class="contact-label">Email</label>
-          <input type="email" name="email" class="contact-input" required data-tipo="email" placeholder="━">
+          <input type="email" name="Email" id="email" class="contact-input" required data-tipo="email" placeholder="Ingrese su email">
           <span class="error-message"></span>
         </div>
         <div class="contact-content">
           <label for="asunto" class="contact-label">Asunto</label>
-          <input type="text" name="asunto" class="contact-input" required pattern="[\s\S]{10,40}" minlength="10" maxlength="40" data-tipo="asunto" placeholder="━">
+          <input type="text" name="Asunto" id="asunto" class="contact-input" required pattern="[\s\S]{10,40}" minlength="10" maxlength="40" data-tipo="asunto" placeholder="Ingrese el asunto">
           <span class="error-message"></span>
         </div>
         <div class="contact-content">
-          <label for="mensaje" class="contact-label">Mensaje</label>
+          <label for="textarea-mensaje" class="contact-label">Mensaje</label>
           <textarea
-            name="mensaje"
-            cols="0"
+            name="Mensaje"
+            cols="30"
             rows="10"
             class="contact-input"
             required
-            pattern="[\s\S]{20,200}" 
             minlength="20"
             maxlength="200"
             data-tipo="mensaje"
-            id="textarea"
-            placeholder="━"
-          ></textarea>
+            id="textarea-mensaje"
+            placeholder="Escriba el mensaje"></textarea>
           <span class="error-message"></span>
-        </div>
+        </div>    
 
         <input
           type="submit"
           value="Enviar Mensaje"
-          class="contact-btn button"
-        />
+          class="contact-btn button">
       </form>
     </div>
   </section>
+-->
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-bg">
       <div class="footer-container container grid">
         <div>
-          <h1 class="footer-title">Luna</h1>
+          <h2 class="footer-title">Luna</h2>
           <span class="footer-subtitle">Desarrolladora Web</span>
         </div>
 
@@ -457,33 +434,70 @@
             <a href="#home" class="footer-link">Inicio</a>
           </li>
           <li>
-            <a href="#portfolio" class="footer-link">Portfolio</a>
+            <a href="#skills" class="footer-link">Skills</a>
           </li>
           <li>
-            <a href="#contact" class="footer-link">Contacto</a>
+            <a href="#portfolio" class="footer-link">Portfolio</a>
           </li>
+          <!--
+          <li>
+            <a href="#contact" class="footer-link">Contacto</a>
+          </li>-->
         </ul>
         <div class="footer-socials">
-          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="footer-social">
+          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Linkedin">
             <i class="bi bi-linkedin"></i></a>
           
-          <a href="https://github.com/lunabianchib" target="_blank" class="footer-social">
+          <a href="https://github.com/lunabianchib" target="_blank" class="footer-social" rel="noopener noreferrer" title="Github">
             <i class="bi bi-github"></i></a>
           
-          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="footer-social">
+          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Instagram">
             <i class="bi bi-instagram"></i></a>
+
+          <a href="https://wa.link/iv6ul9" target="_blank" class="footer-social" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           
+          <a href="https://mail.google.com/mail/u/bianchiborcheslunaa@gmail.com" target="_blank" class="footer-social" rel="noopener noreferrer" title="Gmail"><i class="bi bi-envelope-heart"></i></a>
+
+          <a href="https://www.behance.net/superartegchu/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Behance"><i class="bi bi-behance"></i></a>
         </div>
       </div>
     </div>
   </footer>
 </main>
-
-<!-- SCROLL REVEAL -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!-- MAIN JS -->
-<script src="main.js"></script>
 <!-- CONTACT VALIDATION -->
-<script src="app.js" type="module"></script>
+<script type="module" src="./Server/app.js"></script>
+<script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+<!-- MAIN JS -->
+<script type="module" src="./Server/main.mjs"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- Bootstrap JS desde CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!--
+<script>
+  // Envolver en una función anónima para evitar conflictos
+  (function ($) {
+      $(document).ready(function () {
+          $('#contact-form').submit(function (e) {
+              e.preventDefault();
+  
+              $.ajax({
+                  type: 'POST',
+                  url: './guardar_datos.php',
+                  data: $('#contact-form').serialize(),
+                  success: function (response) {
+                      // Manejar la respuesta del servidor
+                      console.log(response);
+                  },
+                  error: function (error) {
+                      // Manejar errores de la petición AJAX
+                      console.log(error);
+                  }
+              });
+          });
+      });
+  })(jQuery);
+  </script>
+  -->
 </body>
 </html>
