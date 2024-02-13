@@ -22,7 +22,7 @@ Estoy constantemente explorando nuevas tecnologías y herramientas para mejorar 
 Si estás interesado/a en colaborar en un proyecto, tienes alguna pregunta o simplemente quieres saludar, no dudes en ponerte en contacto conmigo a través de:
 
 - Correo electrónico: bianchiborcheslunaa@gmail.com
-- LinkedIn: [Luna Bianchi Borches]([https://www.linkedin.com/in/luna-bianchi-borches-005801205/])
+- LinkedIn: [Luna Bianchi Borches](https://www.linkedin.com/in/luna-bianchi-borches-005801205/)
 
 ¡Gracias por visitar mi portafolio! Espero que disfrutes explorando mis proyectos tanto como yo disfruté creándolos. ¡No dudes en ponerte en contacto si tienes alguna pregunta o sugerencia!
 
